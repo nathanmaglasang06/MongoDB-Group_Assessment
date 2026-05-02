@@ -1,0 +1,91 @@
+{
+  "_id": {
+    "$oid": "000000000000000000000001"
+  },
+  "username": "nath06anm",
+  "email": "nathan.maglasang06@gmail.com",
+  "password_hash": "7e7b635a96cd1b3e1e44afc95ee53f6e69d0d7d6986e2f98d196dc479bfccfa2",
+  "bio": "Just a guy named Nathan",
+  "profile_pic": "avatar_nath.jpg",
+  "created_at": {
+    "$date": "2024-01-10T00:00:00Z"
+  },
+  "login_history": [
+    {
+      "ip": "192.168.1.1",
+      "logged_in_at": {
+        "$date": "2026-04-30T08:00:00Z"
+      }
+    },
+    {
+      "ip": "192.168.1.1",
+      "logged_in_at": {
+        "$date": "2026-05-01T09:00:00Z"
+      }
+    }
+  ]
+}
+{
+ "_id": {
+   "$oid": "100000000000000000000001"
+ },
+ "user_id": {
+   "$oid": "000000000000000000000001"
+ },
+ "username": "nath06anm",
+ "caption": "Hello I am Nathan",
+ "location": null,
+ "image_file": "img1.jpg",
+ "like_count": 2,
+ "liked_by_users": [
+   {
+     "$oid": "000000000000000000000004"
+   },
+   {
+     "$oid": "000000000000000000000012"
+   }
+ ],
+ "comments": [
+   {
+     "user_id": {
+       "$oid": "000000000000000000000002"
+     },
+     "username": "_j_j_woo",
+     "text": "I love nathan he is great",
+     "created_at": {
+       "$date": "2026-05-01T10:00:00Z"
+     },
+     "comment_likes": [
+       {
+         "$oid": "000000000000000000000003"
+       }
+     ],
+     "_id": {
+       "$oid": "301010000000000000000000"
+     }
+   },
+   {
+     "user_id": {
+       "$oid": "000000000000000000000003"
+     },
+     "username": "gregdaniels",
+     "text": "That has sort of an oaky afterbirth",
+     "created_at": {
+       "$date": "2026-05-01T10:05:00Z"
+     },
+     "comment_likes": [],
+     "_id": {
+       "$oid": "301020000000000000000000"
+     }
+   }
+ ],
+ "created_at": {
+   "$date": "2026-05-01T09:00:00Z"
+ }
+}
+{
+  "_id": { "$oid": "200000000000000000000001" },
+  "follower_id": { "$oid": "000000000000000000000001" },
+  "followee_id": { "$oid": "000000000000000000000002" },
+  "followed_at": { "$date": "2026-01-10T00:00:00Z" }
+}

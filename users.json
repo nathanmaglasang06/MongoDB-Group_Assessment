@@ -1,0 +1,323 @@
+[
+  {
+    "_id": {
+      "$oid": "000000000000000000000001"
+    },
+    "username": "nath06anm",
+    "email": "nathan.maglasang06@gmail.com",
+    "password_hash": "7e7b635a96cd1b3e1e44afc95ee53f6e69d0d7d6986e2f98d196dc479bfccfa2",
+    "bio": "Just a guy named Nathan",
+    "profile_pic": "avatar_nath.jpg",
+    "created_at": {
+      "$date": "2024-01-10T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "192.168.1.1",
+        "logged_in_at": {
+          "$date": "2026-04-30T08:00:00Z"
+        }
+      },
+      {
+        "ip": "192.168.1.1",
+        "logged_in_at": {
+          "$date": "2026-05-01T09:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000002"
+    },
+    "username": "_j_j_woo",
+    "email": "jin.woo05@gmail.com",
+    "password_hash": "d0b4bfae656dd1eb88664166b21a421953ec7d41fb9d12c9e30fcd260f5fb60c",
+    "bio": "Jin's corner of the internet",
+    "profile_pic": "avatar_jin.jpg",
+    "created_at": {
+      "$date": "2024-02-14T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "203.0.113.10",
+        "logged_in_at": {
+          "$date": "2026-04-29T10:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000003"
+    },
+    "username": "gregdaniels",
+    "email": "greg.daniels63@gmail.com",
+    "password_hash": "c79afce0234226c4a0da1bf7e00a3c8eeabc54880f4d2271b0fd9b12079568bb",
+    "bio": "Writer. Creator. The Office & Parks.",
+    "profile_pic": "avatar_greg.jpg",
+    "created_at": {
+      "$date": "2024-01-01T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "198.51.100.5",
+        "logged_in_at": {
+          "$date": "2026-04-28T12:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000004"
+    },
+    "username": "kenjeong",
+    "email": "ken.jeong69@gmail.com",
+    "password_hash": "1946db98f92a0b543ea9a4a8ff973fefddeed5546e34ce8f835c29815df5133f",
+    "bio": "Actor. Comedian. Doctor. Chang.",
+    "profile_pic": "avatar_ken.jpg",
+    "created_at": {
+      "$date": "2024-03-05T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "203.0.113.22",
+        "logged_in_at": {
+          "$date": "2026-04-30T15:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000005"
+    },
+    "username": "annehathaway",
+    "email": "anne.hathaway82@gmail.com",
+    "password_hash": "e1a8f2d2ebfdfa668aa5ce67f8e884c5193c8a6336209faa7cf554ca84c7a533",
+    "bio": "Actress. Devil Wears Prada 2 out NOW.",
+    "profile_pic": "avatar_anne.jpg",
+    "created_at": {
+      "$date": "2024-04-20T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "192.0.2.99",
+        "logged_in_at": {
+          "$date": "2026-05-01T07:30:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000006"
+    },
+    "username": "stevecarell",
+    "email": "steve.carell62@gmail.com",
+    "password_hash": "5bc93972ac655176d68d730e5facbc97485313cf7e96483bc1d561c9514f2715",
+    "bio": "That's what she said.",
+    "profile_pic": "avatar_steve.jpg",
+    "created_at": {
+      "$date": "2024-01-20T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "198.51.100.33",
+        "logged_in_at": {
+          "$date": "2026-04-27T09:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000007"
+    },
+    "username": "aubreyplaza",
+    "email": "aubrey.plaza84@gmail.com",
+    "password_hash": "77bb32908694231d1b89b9b1847b481dd955e59869dfc7b88d51f4c5b429d79a",
+    "bio": "I don't care. I'm April.",
+    "profile_pic": "avatar_aubrey.jpg",
+    "created_at": {
+      "$date": "2024-05-01T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "203.0.113.77",
+        "logged_in_at": {
+          "$date": "2026-04-30T22:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000008"
+    },
+    "username": "michaelschur",
+    "email": "michael.schur75@gmail.com",
+    "password_hash": "1e444c4879335812847de40244b38d4a4fbc9d4d1cec7c3cfe83b79f6815e350",
+    "bio": "Creator. The Good Place & Parks & Rec.",
+    "profile_pic": "avatar_mike.jpg",
+    "created_at": {
+      "$date": "2024-02-28T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "192.0.2.44",
+        "logged_in_at": {
+          "$date": "2026-04-29T18:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000009"
+    },
+    "username": "allisonbrie",
+    "email": "allison.brie82@gmail.com",
+    "password_hash": "36d872f710753fdfa02c6e6edc33ca9c13f0ae735a93e895a9555088fb6f674a",
+    "bio": "Actress. Annie Edison forever.",
+    "profile_pic": "avatar_allison.jpg",
+    "created_at": {
+      "$date": "2024-06-10T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "198.51.100.66",
+        "logged_in_at": {
+          "$date": "2026-05-01T08:45:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000010"
+    },
+    "username": "nickofferman",
+    "email": "nick.offerman70@gmail.com",
+    "password_hash": "699ead5e52ef82b1b4e50b5936e0ba8d6a802d5c8ec26c5b81e53400964cab5b",
+    "bio": "Woodworker. Libertarian. Ron Swanson is not me but I get it.",
+    "profile_pic": "avatar_nick.jpg",
+    "created_at": {
+      "$date": "2024-03-15T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "203.0.113.55",
+        "logged_in_at": {
+          "$date": "2026-04-28T06:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000011"
+    },
+    "username": "amypoehler",
+    "email": "amy.poehler71@gmail.com",
+    "password_hash": "f1ff845af6c5b37314c6f4b4f902aabf2c4edcd88d52db191ede23d79c9e25d0",
+    "bio": "Leslie Knope is my spirit animal.",
+    "profile_pic": "avatar_amy.jpg",
+    "created_at": {
+      "$date": "2024-01-30T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "192.0.2.11",
+        "logged_in_at": {
+          "$date": "2026-05-01T07:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000012"
+    },
+    "username": "tinafey",
+    "email": "tina.fey70@gmail.com",
+    "password_hash": "781c95d80d75de5d6c4b5d932e50043ff15705cd09a88344f4747e2ac1fd1544",
+    "bio": "30 Rock. Mean Girls. What the what.",
+    "profile_pic": "avatar_tina.jpg",
+    "created_at": {
+      "$date": "2024-02-05T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "198.51.100.88",
+        "logged_in_at": {
+          "$date": "2026-04-30T20:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000013"
+    },
+    "username": "fredarmisen",
+    "email": "fred.armisen66@gmail.com",
+    "password_hash": "ce6abae6b391a4a122342f303863d4ae9a36fbc62539938b85dae752e807514e",
+    "bio": "SNL. Portlandia. Do not touch my earlobes.",
+    "profile_pic": "avatar_fred.jpg",
+    "created_at": {
+      "$date": "2024-04-01T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "203.0.113.44",
+        "logged_in_at": {
+          "$date": "2026-04-29T11:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000014"
+    },
+    "username": "katemckinnon",
+    "email": "kate.mckinnon84@gmail.com",
+    "password_hash": "13895f425b44bf62e729d8c3a9e1ad9ab624f39383bf7016ecedd2837150b83c",
+    "bio": "SNL. Ghostbusters. The aliens know where I live.",
+    "profile_pic": "avatar_kate.jpg",
+    "created_at": {
+      "$date": "2024-05-15T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "192.0.2.77",
+        "logged_in_at": {
+          "$date": "2026-04-30T13:00:00Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "000000000000000000000015"
+    },
+    "username": "jimrash",
+    "email": "jim.rash71@gmail.com",
+    "password_hash": "5abf15388facd035e1af9c295a1a8aa40c4a7b0f6a78c585c582cfbc4cff12f",
+    "bio": "The Dean. Coolcoolcool. Dean out.",
+    "profile_pic": "avatar_jim.jpg",
+    "created_at": {
+      "$date": "2024-03-22T00:00:00Z"
+    },
+    "login_history": [
+      {
+        "ip": "198.51.100.22",
+        "logged_in_at": {
+          "$date": "2026-05-01T06:30:00Z"
+        }
+      }
+    ]
+  }
+]

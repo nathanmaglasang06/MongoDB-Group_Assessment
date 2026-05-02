@@ -1,0 +1,19 @@
+// In mongosh
+show dbs
+use <your_db_name>
+show collections
+
+// Preview a collection
+db.follows.find().pretty()
+db.users.find().pretty()
+
+// Drop a specific collection (removes all documents + the collection itself)
+db.follows.drop()
+db.users.drop()
+
+// Or just delete all documents but keep the collection
+db.follows.deleteMany({})
+db.users.deleteMany({})
+
+// Nuclear option — drop the whole database
+db.dropDatabase()
