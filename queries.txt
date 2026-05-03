@@ -1,0 +1,498 @@
+View all users – Shows username and bio
+    social> db.users.find({}, { username: 1, bio: 1, _id: 0 }).pretty()
+    [
+      {
+        username: 'michaelschur',
+        bio: 'Creator. The Good Place & Parks & Rec.'
+      },
+      { username: 'allisonbrie', bio: 'Actress. Annie Edison forever.' },
+      { username: 'nath06anm', bio: 'Just a guy named Nathan' },
+      { username: 'amypoehler', bio: 'Leslie Knope is my spirit animal.' },
+      {
+        username: 'nickofferman',
+        bio: 'Woodworker. Libertarian. Ron Swanson is not me but I get it.'
+      },
+      { username: 'tinafey', bio: '30 Rock. Mean Girls. What the what.' },
+      {
+        username: 'fredarmisen',
+        bio: 'SNL. Portlandia. Do not touch my earlobes.'
+      },
+      { username: 'jimrash', bio: 'The Dean. Coolcoolcool. Dean out.' },
+      {
+        username: 'katemckinnon',
+        bio: 'SNL. Ghostbusters. The aliens know where I live.'
+      },
+      {
+        username: 'annehathaway',
+        bio: 'Actress. Devil Wears Prada 2 out NOW.'
+      },
+      { username: '_j_j_woo', bio: "Jin's corner of the internet" },
+      { username: 'kenjeong', bio: 'Actor. Comedian. Doctor. Chang.' },
+      { username: 'stevecarell', bio: "That's what she said." },
+      {
+        username: 'gregdaniels',
+        bio: 'Writer. Creator. The Office & Parks.'
+      },
+      { username: 'aubreyplaza', bio: "I don't care. I'm April." }
+    ]
+
+
+View all posts with their author ID, caption and time created
+    social> db.posts.find({}, { user_id: 1, caption: 1, created_at: 1 }).pretty()
+    [
+      {
+        _id: ObjectId('100000000000000000000006'),
+        user_id: ObjectId('000000000000000000000006'),
+        caption: 'Im not superstitous... but I am a little stitous',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000004'),
+        user_id: ObjectId('000000000000000000000004'),
+        caption: 'I have Changnesia',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000007'),
+        user_id: ObjectId('000000000000000000000007'),
+        caption: 'I think we can agree that all wine tastes the same, and if you spend more than $5 on wine, you are very stupid.',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000011'),
+        user_id: ObjectId('000000000000000000000011'),
+        caption: 'Vote Knope for President!',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000009'),
+        user_id: ObjectId('000000000000000000000009'),
+        caption: 'I cant find my pen',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000012'),
+        user_id: ObjectId('000000000000000000000012'),
+        caption: 'My TV station is failing noo',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000013'),
+        user_id: ObjectId('000000000000000000000013'),
+        caption: 'Dont touch my earlobes',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000014'),
+        user_id: ObjectId('000000000000000000000014'),
+        caption: 'So the 50 little grey guys ...',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000015'),
+        user_id: ObjectId('000000000000000000000015'),
+        caption: 'I dont take knowledge but i spit it for free. Dean out',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000016'),
+        user_id: ObjectId('000000000000000000000009'),
+        caption: 'Hey Guys check out the trailer for my new movie: Together',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000017'),
+        user_id: ObjectId('000000000000000000000004'),
+        caption: 'El Tigre is back: # Six seasons and a Movie',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000002'),
+        user_id: ObjectId('000000000000000000000002'),
+        caption: 'Nathan Is amazing',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000001'),
+        user_id: ObjectId('000000000000000000000001'),
+        caption: 'Hello I am Nathan',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000020'),
+        user_id: ObjectId('000000000000000000000004'),
+        caption: 'I have Changnesia',
+        created_at: ISODate('2026-05-01T09:10:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000003'),
+        user_id: ObjectId('000000000000000000000003'),
+        caption: 'The Office Deleted Scenes',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000018'),
+        user_id: ObjectId('000000000000000000000006'),
+        caption: 'SpaceForce: Season 4?',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000005'),
+        user_id: ObjectId('000000000000000000000005'),
+        caption: 'Get ready for the devil wears prada 2, May 1st',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000019'),
+        user_id: ObjectId('000000000000000000000007'),
+        caption: 'Ron Swanson',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000010'),
+        user_id: ObjectId('000000000000000000000010'),
+        caption: 'The government is bad, I like woodworking',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000008'),
+        user_id: ObjectId('000000000000000000000008'),
+        caption: 'I am mose',
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      }
+    ]
+
+
+Show all the posts a user has made
+    social> db.posts.find(
+    |   { user_id: ObjectId("000000000000000000000004") },
+    |   { caption: 1, image_file: 1, like_count: 1, created_at: 1, location: 1 }
+    | ).sort({ created_at: -1 })
+    | 
+    [
+      {
+        _id: ObjectId('100000000000000000000020'),
+        caption: 'I have Changnesia',
+        location: 'Greendale Community College',
+        image_file: 'communtiy_chang.jpeg',
+        like_count: 2,
+        created_at: ISODate('2026-05-01T09:10:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000004'),
+        caption: 'I have Changnesia',
+        location: 'Greendale Community College',
+        image_file: 'communtiy_chang.jpeg',
+        like_count: 2,
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000017'),
+        caption: 'El Tigre is back: # Six seasons and a Movie',
+        location: 'Greendale Community College',
+        image_file: 'Communtiy_poster.jpg',
+        like_count: 2,
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      }
+    ]
+
+
+Show comments on a post
+    social> db.posts.findOne(
+    |   { _id: ObjectId("100000000000000000000001") },
+    |   { comments: 1, caption: 1, _id: 0 }
+    | )
+    | 
+    {
+      caption: 'Hello I am Nathan',
+      comments: [
+        {
+          user_id: ObjectId('000000000000000000000002'),
+          username: '_j_j_woo',
+          text: 'I love nathan he is great',
+          created_at: ISODate('2026-05-01T10:00:00.000Z'),
+          comment_likes: [ ObjectId('000000000000000000000003') ],
+          _id: ObjectId('301010000000000000000000')
+        },
+        {
+          user_id: ObjectId('000000000000000000000003'),
+          username: 'gregdaniels',
+          text: 'That has sort of an oaky afterbirth',
+          created_at: ISODate('2026-05-01T10:05:00.000Z'),
+          comment_likes: [],
+          _id: ObjectId('301020000000000000000000')
+        }
+      ]
+    }
+
+Count Likes on a post
+    social> db.posts.findOne(
+    |   { _id: ObjectId("100000000000000000000001") },
+    |   { like_count: 1, caption: 1, _id: 0 }
+    | )
+    | 
+    { caption: 'Hello I am Nathan', like_count: 2 }
+
+Show a full post:
+-	Post
+-	Comments
+-	Likes
+-	Author
+
+social> db.posts.aggregate([
+    |   { $match: { _id: ObjectId("100000000000000000000001") } },
+    |   {
+    |     $lookup: {
+    |       from: "users",
+    |       localField: "user_id",
+    |       foreignField: "_id",
+    |       as: "author"
+    |     }
+    |   },
+    |   { $unwind: "$author" },
+    |   {
+    |     $project: {
+    |       caption: 1,
+    |       image_file: 1,
+    |       location: 1,
+    |       created_at: 1,
+    |       like_count: 1,
+    |       liked_by_users: 1,
+    |       comments: 1,
+    |       comment_count: { $size: "$comments" },
+    |       "author.username": 1,
+    |       "author.profile_pic": 1,
+    |       "author.bio": 1
+    |     }
+    |   }
+    | ])
+    | 
+    [
+      {
+        _id: ObjectId('100000000000000000000001'),
+        caption: 'Hello I am Nathan',
+        location: null,
+        image_file: 'img1.jpg',
+        like_count: 2,
+        liked_by_users: [
+          ObjectId('000000000000000000000004'),
+          ObjectId('000000000000000000000012')
+        ],
+        comments: [
+          {
+            user_id: ObjectId('000000000000000000000002'),
+            username: '_j_j_woo',
+            text: 'I love nathan he is great',
+            created_at: ISODate('2026-05-01T10:00:00.000Z'),
+            comment_likes: [ ObjectId('000000000000000000000003') ],
+            _id: ObjectId('301010000000000000000000')
+          },
+          {
+            user_id: ObjectId('000000000000000000000003'),
+            username: 'gregdaniels',
+            text: 'That has sort of an oaky afterbirth',
+            created_at: ISODate('2026-05-01T10:05:00.000Z'),
+            comment_likes: [],
+            _id: ObjectId('301020000000000000000000')
+          }
+        ],
+        created_at: ISODate('2026-05-01T09:00:00.000Z'),
+        author: {
+          username: 'nath06anm',
+          bio: 'Just a guy named Nathan',
+          profile_pic: 'avatar_nath.jpg'
+        },
+        comment_count: 2
+      }
+    ]
+
+Show top 5 commentors
+    social> db.posts.aggregate([
+    |   { $unwind: "$comments" },
+    |   { $group: { _id: "$comments.username", total_comments: { $sum: 1 } } },
+    |   { $sort: { total_comments: -1 } },
+    |   { $limit: 5 }
+    | ])
+    | 
+    [
+      { _id: 'jimrash', total_comments: 5 },
+      { _id: 'allisonbrie', total_comments: 5 },
+      { _id: 'gregdaniels', total_comments: 4 },
+      { _id: 'stevecarell', total_comments: 4 },
+      { _id: 'nath06anm', total_comments: 3 }
+    ]
+
+Generate a Feed: Shows all the posts from followed users
+    social> db.followers.aggregate([
+    |   { $match: { follower_id: ObjectId("000000000000000000000001") } },
+    |   {
+    |     $lookup: {
+    |       from: "posts",
+    |       localField: "followee_id",
+    |       foreignField: "user_id",
+    |       as: "posts"
+    |     }
+    |   },
+    |   { $unwind: "$posts" },
+    |   { $replaceRoot: { newRoot: "$posts" } },
+    |   { $sort: { created_at: -1 } },
+    |   { $limit: 20 }
+    | ])
+    | 
+    [
+      {
+        _id: ObjectId('100000000000000000000002'),
+        user_id: ObjectId('000000000000000000000002'),
+        username: '_j_j_woo',
+        caption: 'Nathan Is amazing',
+        location: null,
+        image_file: 'img2.jpg',
+        like_count: 2,
+        liked_by_users: [
+          ObjectId('000000000000000000000014'),
+          ObjectId('000000000000000000000003')
+        ],
+        comments: [
+          {
+            user_id: ObjectId('000000000000000000000001'),
+            username: 'nath06anm',
+            text: 'I agree',
+            created_at: ISODate('2026-05-01T10:00:00.000Z'),
+            comment_likes: [
+              ObjectId('000000000000000000000002'),
+              ObjectId('000000000000000000000005')
+            ],
+            _id: ObjectId('302010000000000000000000')
+          },
+          {
+            user_id: ObjectId('000000000000000000000002'),
+            username: '_j_j_woo',
+            text: 'I also agree',
+            created_at: ISODate('2026-05-01T10:05:00.000Z'),
+            comment_likes: [],
+            _id: ObjectId('302020000000000000000000')
+          }
+        ],
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      },
+      {
+        _id: ObjectId('100000000000000000000003'),
+        user_id: ObjectId('000000000000000000000003'),
+        username: 'gregdaniels',
+        caption: 'The Office Deleted Scenes',
+        location: 'Scranton, Pennsylvania',
+        image_file: 'office_deleted.jpg',
+        like_count: 2,
+        liked_by_users: [
+          ObjectId('000000000000000000000008'),
+          ObjectId('000000000000000000000013')
+        ],
+        comments: [
+          {
+            user_id: ObjectId('000000000000000000000006'),
+            username: 'stevecarell',
+            text: 'How the turntables!',
+            created_at: ISODate('2026-05-01T10:00:00.000Z'),
+            comment_likes: [
+              ObjectId('000000000000000000000008'),
+              ObjectId('000000000000000000000013')
+            ],
+            _id: ObjectId('303010000000000000000000')
+          },
+          {
+            user_id: ObjectId('000000000000000000000008'),
+            username: 'michaelschur',
+            text: 'beets',
+            created_at: ISODate('2026-05-01T10:05:00.000Z'),
+            comment_likes: [ ObjectId('000000000000000000000006') ],
+            _id: ObjectId('303020000000000000000000')
+          }
+        ],
+        created_at: ISODate('2026-05-01T09:00:00.000Z')
+      }
+    ]
+
+List all of a users followers
+    social> db.followers.aggregate([
+    |   { $match: { followee_id: ObjectId("000000000000000000000008") } },
+    |   {
+    |     $lookup: {
+    |       from: "users",
+    |       localField: "follower_id",
+    |       foreignField: "_id",
+    |       as: "follower"
+    |     }
+    |   },
+    |   { $unwind: "$follower" },
+    |   {
+    |     $project: {
+    |       "follower.username": 1,
+    |       "follower.profile_pic": 1,
+    |       "follower.bio": 1,
+    |       followed_at: 1,
+    |       _id: 0
+    |     }
+    |   }
+    | ])
+    | 
+    [
+      {
+        followed_at: ISODate('2026-01-16T00:00:00.000Z'),
+        follower: {
+          username: 'kenjeong',
+          bio: 'Actor. Comedian. Doctor. Chang.',
+          profile_pic: 'avatar_ken.jpg'
+        }
+      },
+      {
+        followed_at: ISODate('2026-01-31T00:00:00.000Z'),
+        follower: {
+          username: 'jimrash',
+          bio: 'The Dean. Coolcoolcool. Dean out.',
+          profile_pic: 'avatar_jim.jpg'
+        }
+      }
+    ]
+
+Recommend Friends based on mutual connections
+    social> db.followers.aggregate([
+    |   { $match: { follower_id: ObjectId("000000000000000000000001") } },
+    |   { $group: { _id: null, following: { $push: "$followee_id" } } },
+    |   { $lookup: { from: "followers", localField: "following", foreignField: "follower_id", as: "second_degree" } },
+    |   { $unwind: "$second_degree" },
+    |   { $match: { $expr: { $and: [
+    |     { $not: { $in: ["$second_degree.followee_id", "$following"] } },
+    |     { $ne: ["$second_degree.followee_id", ObjectId("000000000000000000000001")] }
+    |   ]}}},
+    |   { $group: { _id: "$second_degree.followee_id", mutual_count: { $sum: 1 } } },
+    |   { $sort: { mutual_count: -1 } },
+    |   { $limit: 5 },
+    |   { $lookup: { from: "users", localField: "_id", foreignField: "_id", as: "suggested_user" } },
+    |   { $unwind: "$suggested_user" },
+    |   { $project: { "suggested_user.username": 1, "suggested_user.bio": 1, mutual_count: 1 } }
+    | ])
+    [
+      {
+        _id: ObjectId('000000000000000000000005'),
+        mutual_count: 1,
+        suggested_user: {
+          username: 'annehathaway',
+          bio: 'Actress. Devil Wears Prada 2 out NOW.'
+        }
+      },
+      {
+        _id: ObjectId('000000000000000000000006'),
+        mutual_count: 1,
+        suggested_user: { username: 'stevecarell', bio: "That's what she said." }
+      },
+      {
+        _id: ObjectId('000000000000000000000007'),
+        mutual_count: 1,
+        suggested_user: { username: 'aubreyplaza', bio: "I don't care. I'm April." }
+      },
+      {
+        _id: ObjectId('000000000000000000000004'),
+        mutual_count: 1,
+        suggested_user: { username: 'kenjeong', bio: 'Actor. Comedian. Doctor. Chang.' }
+      }
+    ]
